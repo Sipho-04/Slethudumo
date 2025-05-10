@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slethudumo Ndimande Matric Dance</title>
+
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color:#EE82EE ;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        .event-date {
+            font-size: 1.2rem;
+            color: #333333;
+        }
+		.description {
+			max-width: 700px;
+			margin: 0 auto 30px auto;
+			font-size: 1.1rem;
+			color: #444;
+			line-height: 1.8;
+			text-align: center;
+		}
+
+        .gallery {
+            margin-bottom: 40px;
+        }
+        .gallery h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .image-gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+		.image-gallery img {
+			width: 100%;
+			max-width: 200px;
+		}
+
+        .video-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 15px;
+		}
+		video {
+			width: 100%;
+			max-width: 200px;
+		}
+		.contact p {
+			color: #2c3e50;
+		}
+		.contact a {
+			color: #2c3e5;
+			text-decoration: underline;
+		}
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Slethudumo Ndimande Matric Dance</h1>
+        <p class="event-date">Date: 2025-04-24</p>
+	    <p class="description">
+         Welcome to Slethudumo Ndimande's Matric Dance. Slethudumo is a young virgin lady from South Africa in the province of KwaZulu-Natal. 
+         She was born in a small town called Jozini, KwaNondabuya Area at Mbondweni Station along the main road. 
+         She is studying at Mandla Mthethwa Boarding School and is so passionate about her studies, consistently achieving the highest marks.
+        </p>	
+    </header>
+
+    <section class="gallery" id="tiger-lodge">
+        <h2>Tiger Lodge Memories</h2>
+        <div class="image-gallery">
+            <img src="Tiger1img.JPG" alt="At Tiger Lodge">
+            <img src="Tiger2img.JPG" alt="At Tiger Lodge">
+			<img src="Tiger3img.JPG" alt="At Tiger Lodge">
+			<img src="Tiger5img.JPG" alt="At Tiger Lodge">
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="Tiger1Video.mp4" type="video/mp4">
+				               
+            </video>
+			
+			<video controls>
+           
+				<source src="Tiger2Video.mp4" type="video/mp4">
+				
+            </video>
+			
+			<video controls>
+                
+				<source src="Tiger3Video.mp4" type="video/mp4">
+				               
+            </video>
+			
+        </div>
+    </section>
+
+    <section class="gallery" id="durban">
+        <h2>Durban Adventures</h2>
+        <div class="image-gallery">
+            <img src="durban3img.jpg" alt="In Durban">
+            <img src="durban1img.jpg" alt="In Durban">
+			<img src="durban2img.jpg" alt="In Durban">
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="Durban1video.mp4" type="video/mp4">
+				
+            </video>
+			
+			<video controls>
+               
+				<source src="Durban2video.mp4" type="video/mp4">
+				
+			 </video>	
+				
+				
+			<video controls>
+                
+				<source src="Durban3video.mp4" type="video/mp4">
+				
+            </video>
+				
+			<video controls>
+               
+				<source src="Durban4video.mp4" type="video/mp4">
+				
+            </video>	
+			
+			<video controls>
+               
+			    <source src="Durban5video.mp4" type="video/mp4"> 
+            </video>
+			
+        </div>
+    </section>
+	
+	<section class="contact">
+		<p style="text-align: center; font-size: 1.1rem; margin-top: 40px;">
+        📧 Contact: <a href="mailto:siphondimande0@gmail.com">siphondimande0@gmail.com</a>
+		</p>
+	</section>
+
+
+    <footer>
+        <p>&copy; 2025 Slethudumo Ndimande</p>
+    </footer>
+
+    <!-- Embedded JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.image-gallery img');
+            images.forEach(img => {
+                img.addEventListener('mouseover', () => {
+                    img.style.transform = 'scale(1.05)';
+                    img.style.transition = 'transform 0.3s ease';
+                });
+                img.addEventListener('mouseout', () => {
+                    img.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
